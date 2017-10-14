@@ -1970,7 +1970,7 @@ public abstract class Model<M extends Model<M,P,O>, P extends Model.Parameters, 
     /**
      * Check to see if any of the vecIdx values is the desired value.
      */
-    public static int interaction(int i, InteractionPair[] ips) {
+    public static int isInteraction(int i, InteractionPair[] ips) {
       int idx = 0;
       for (InteractionPair ip: ips) {
         if (i == ip.vecIdx) return idx;
